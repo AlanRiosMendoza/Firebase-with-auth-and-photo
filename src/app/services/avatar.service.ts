@@ -12,21 +12,25 @@ export class AvatarService {
 
 	getUserProfile() {
 		const user = this.auth.currentUser;
-		const userDocRef = doc(this.firestore, `users/${user.uid}`);
+		const userDocRef = doc(this.firestore, `users/${user?.uid}`);
 		return docData(userDocRef, { idField: 'id' });
 	}
 
 	async uploadImage(cameraFile: Photo) {
 		const user = this.auth.currentUser;
-		const path = `uploads/${user.uid}/profile.webp`;
+		const path = `uploads/${user?.uid}/profile.webp`;
 		const storageRef = ref(this.storage, path);
 
 		try {
-			await uploadString(storageRef, cameraFile.base64String, 'base64');
+			if (cameraFile.base64String) {
+				await uploadString(storageRef, cameraFile.base64String, 'base64');
+			} else {
+				throw new Error('No base64 string available in the camera file.');
+			}
 
 			const imageUrl = await getDownloadURL(storageRef);
 
-			const userDocRef = doc(this.firestore, `users/${user.uid}`);
+			const userDocRef = doc(this.firestore, `users/${user?.uid}`);
 			await setDoc(userDocRef, {
 				imageUrl
 			});

@@ -4,6 +4,7 @@ import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { AuthService } from '../services/auth.service';
 import { AvatarService } from '../services/avatar.service';
+import { DocumentData } from '@angular/fire/firestore';
 
 @Component({
 	selector: 'app-home',
@@ -11,7 +12,7 @@ import { AvatarService } from '../services/avatar.service';
 	styleUrls: ['home.page.scss']
 })
 export class HomePage {
-	profile = null;
+	profile: DocumentData | { id: any } | undefined = undefined;
 
 	constructor(
 		private avatarService: AvatarService,
