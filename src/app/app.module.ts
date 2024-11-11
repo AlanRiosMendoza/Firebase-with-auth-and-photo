@@ -15,14 +15,7 @@ import { environment } from '../environments/environment';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, provideFirebaseApp(() => initializeApp({
-    "projectId":environment.firebaseConfig.projectId,
-    "appId":environment.firebaseConfig.appId,
-    "storageBucket":environment.firebaseConfig.storageBucket,
-    "apiKey":environment.firebaseConfig.apiKey,
-    "authDomain":environment.firebaseConfig.authDomain,
-    "messagingSenderId":environment.firebaseConfig.messagingSenderId,
-    "measurementId":environment.firebaseConfig.measurementId})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideStorage(() => getStorage())],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideStorage(() => getStorage())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

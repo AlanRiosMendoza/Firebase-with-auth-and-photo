@@ -12,7 +12,7 @@ import { DocumentData } from '@angular/fire/firestore';
 	styleUrls: ['home.page.scss']
 })
 export class HomePage {
-	profile: DocumentData | { id: any } | undefined = undefined;
+	profile: DocumentData | { id: any, imageUrl:any } | undefined = undefined;
 
 	constructor(
 		private avatarService: AvatarService,

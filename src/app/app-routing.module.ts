@@ -12,12 +12,12 @@ const routes: Routes = [
 	// 	...canActivate(redirectLoggedInToHome)
 	// },
 	{
-		path: '',
+		path: 'home',
 		loadChildren: () => import('./home/home.module').then((m) => m.HomePageModule),
 		//...canActivate(redirectUnauthorizedToLogin)
 	},
 	{
-		path: '',
+		path: '**',
 		redirectTo: '',
 		pathMatch: 'full'
 	}
@@ -27,4 +27,4 @@ const routes: Routes = [
 	imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
 	exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {}
