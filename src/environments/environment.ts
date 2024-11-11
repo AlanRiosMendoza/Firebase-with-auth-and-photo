@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  irebaseConfig:{
+  firebaseConfig:{
     apiKey: "AIzaSyBYYBnkiZvkpKHY6gI9S7F0AhZltmprlto",
     authDomain: "movil-2024b.firebaseapp.com",
     projectId: "movil-2024b",
