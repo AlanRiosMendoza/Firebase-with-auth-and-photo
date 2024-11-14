@@ -101,10 +101,21 @@ export const environment = {
 
 # Building the Authentication Logic
 
+## src/app/services/auth.service.ts
+![{B55C56F9-A616-447B-851C-056F5CFC4AD8}](https://github.com/user-attachments/assets/373a539d-d174-4cf2-a10e-abb4f877dd5f)
 
+## src/app/login/login.module.ts
+![{EA9EB15F-81B1-4348-B358-22A2A76EE53D}](https://github.com/user-attachments/assets/c500be36-5362-4b44-8347-52fe1d44b367)
 
+## src/app/login/login.page.ts
+![{9CFA5AE6-F944-462D-BFF9-A3042921B73A}](https://github.com/user-attachments/assets/c9205c21-caae-4328-a88c-d6271c3481b5)
+![{F750A0F5-14FC-40C1-BD93-A3C4D6467176}](https://github.com/user-attachments/assets/3bb42de5-e683-4058-b2fd-626867d16236)
 
+## src/app/login/login.page.html
+![{79049D4B-78B5-46C4-9FDD-D0D52CBB7AF4}](https://github.com/user-attachments/assets/358f1da1-a288-443b-8902-3607b3924c87)
 
+# Authentication 
+![{76FC5C39-CC34-4DE5-83DD-B531F1F2DE32}](https://github.com/user-attachments/assets/bcdf85c7-cdd1-45e8-bcba-c5d22f890860)
 
 
 
