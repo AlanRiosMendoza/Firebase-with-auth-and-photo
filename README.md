@@ -8,6 +8,7 @@
 Clona el proyecto
 
 ```bash
+  https://github.com/AlanRiosMendoza/Firebase-with-auth-and-photo.git
 ```
 
 Posiciónate la carpeta del proyecto
@@ -40,6 +41,8 @@ Todo esto es necesario para que pueda funcionar correctamente
 
 ##  Variables de Entorno
 
+
+```bash
 rules_version = '2';
 service firebase.storage {
   match /b/{bucket}/o {
@@ -48,11 +51,21 @@ service firebase.storage {
     }
   }
 }
+```
 
 # Iniciando la integración de su aplicación Ionic y Firebase
 
 
-
+```bash
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+```
 
 
 
