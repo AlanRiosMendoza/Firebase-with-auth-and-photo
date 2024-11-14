@@ -118,7 +118,7 @@ export const environment = {
 ![{76FC5C39-CC34-4DE5-83DD-B531F1F2DE32}](https://github.com/user-attachments/assets/bcdf85c7-cdd1-45e8-bcba-c5d22f890860)
 
 
-#Uploading image files to Firebase with Capacitor
+# Uploading image files to Firebase with Capacitor
 
 ## src/app/services/avatar.service.ts
 ![{74DCF022-A292-4B60-866A-BDF406F89CF1}](https://github.com/user-attachments/assets/59bfd262-0155-447c-9f04-2f3b3a3af4d6)
