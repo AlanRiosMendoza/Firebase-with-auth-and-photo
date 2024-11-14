@@ -12,7 +12,7 @@ import {
 export class AuthService {
   constructor(private auth: Auth) {}
 
-  async register({ email, password }) {
+  async register({ email, password }: { email: string; password: string }) {
     try {
       const user = await createUserWithEmailAndPassword(this.auth, email, password);
       return user;
@@ -21,7 +21,7 @@ export class AuthService {
     }
   }
 
-  async login({ email, password }) {
+  async login({ email, password }: { email: string; password: string }) {
     try {
       const user = await signInWithEmailAndPassword(this.auth, email, password);
       return user;

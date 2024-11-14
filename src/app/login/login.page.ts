@@ -11,7 +11,10 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./login.page.scss']
 })
 export class LoginPage implements OnInit {
-  credentials: FormGroup;
+  credentials: FormGroup = this.fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, Validators.minLength(6)]]
+  });
 
   constructor(
     private fb: FormBuilder,
@@ -65,7 +68,7 @@ export class LoginPage implements OnInit {
     }
   }
 
-  async showAlert(header, message) {
+  async showAlert(header: string, message: string) {
     const alert = await this.alertController.create({
       header,
       message,
