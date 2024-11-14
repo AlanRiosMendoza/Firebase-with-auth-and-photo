@@ -118,13 +118,31 @@ export const environment = {
 ![{76FC5C39-CC34-4DE5-83DD-B531F1F2DE32}](https://github.com/user-attachments/assets/bcdf85c7-cdd1-45e8-bcba-c5d22f890860)
 
 
+#Uploading image files to Firebase with Capacitor
+
+## src/app/services/avatar.service.ts
+![{74DCF022-A292-4B60-866A-BDF406F89CF1}](https://github.com/user-attachments/assets/59bfd262-0155-447c-9f04-2f3b3a3af4d6)
+
+## src/app/home/home.page.ts
+![{F5821C10-650B-47B6-B398-8A2E8DE8F584}](https://github.com/user-attachments/assets/d063e11b-d63b-4c9a-8cb6-2a5bfdfa77a6)
+![{90D51A42-E16B-4ADB-B984-4F1D08AADBDF}](https://github.com/user-attachments/assets/5b3940eb-40a2-456b-b8ba-8a46613f56f5)
+
+## src/app/home/home.page.html
+![{E3BE499F-A8F4-46E3-87EC-570736902428}](https://github.com/user-attachments/assets/135cb559-e806-487a-8d43-70de0061b1a6)
+
+## src/app/home/home.page.scss
+![{0A155946-195D-4E57-8778-DD565A7BAA9A}](https://github.com/user-attachments/assets/35bc6f13-8f4d-45fe-9109-55ed72870b01)
 
 
+## Android Changes
 
+```bash
+  ionic build
 
+ionic cap add android
+```
 
-
-
+## android/app/src/main/AndroidManifest.xml
 
 
 
