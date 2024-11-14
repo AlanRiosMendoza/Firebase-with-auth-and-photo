@@ -143,6 +143,26 @@ ionic cap add android
 ```
 
 ## android/app/src/main/AndroidManifest.xml
+![{82E6ED28-701B-4D8A-92D1-5DE243F6EEAB}](https://github.com/user-attachments/assets/6975a9d5-c673-437e-918c-5b0da0c08176)
+
+APK
+![{79E1C3F9-CCC5-4BCE-9DF7-C8601FF98F69}](https://github.com/user-attachments/assets/3d45439f-0132-41b3-a4e2-524f2ebb8bcd)
+![{5874C89F-5A71-49AC-887D-5FBA6B0B1BD1}](https://github.com/user-attachments/assets/40d748cc-c140-45d8-95c6-9847475558cc)
+![{BDBBE252-7D8C-45AD-AEFC-6B5E9752E807}](https://github.com/user-attachments/assets/0e681c2b-4d72-499a-ae1e-bc8a6339b9d3)
+![{5F575037-6FD9-40FD-91C0-605FF3E678FC}](https://github.com/user-attachments/assets/0adb0c54-3bb9-4ceb-bf80-d79235c2047c)
+![{CDB13818-8635-4A1E-BD7E-66360D1278BD}](https://github.com/user-attachments/assets/4e406a45-8ab9-4d06-a602-17a211644421)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
