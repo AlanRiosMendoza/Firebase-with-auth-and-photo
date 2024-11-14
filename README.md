@@ -1,6 +1,7 @@
-#  Storage en Firebase
+#  Ionic Firebase Authentication & File Upload 
 
-Almacenamiento de archivos utilizando el servicio de "Storage" de firebase
+
+# Creacion del proyecto Firebase 
 
 ## ⏬ Instalacion
 
@@ -38,3 +39,37 @@ La aplicación utilizará por defecto el puerto 4200
 Todo esto es necesario para que pueda funcionar correctamente
 
 ##  Variables de Entorno
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+# Iniciando la integración de su aplicación Ionic y Firebase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
