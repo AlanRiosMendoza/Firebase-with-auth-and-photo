@@ -99,7 +99,9 @@ export const environment = {
 ![{19C9E41C-E56A-4BB6-AD80-9D1B8D854A93}](https://github.com/user-attachments/assets/e863273c-51bc-4cfe-871a-03e92d27c052)
 
 
-# Building the Authentication Logic
+# Building the Authentication Logic 
+
+# Cristian Paredes
 
 ## src/app/services/auth.service.ts
 ![{B55C56F9-A616-447B-851C-056F5CFC4AD8}](https://github.com/user-attachments/assets/373a539d-d174-4cf2-a10e-abb4f877dd5f)
@@ -119,6 +121,7 @@ export const environment = {
 
 
 # Uploading image files to Firebase with Capacitor
+# Alan Rios
 
 ## src/app/services/avatar.service.ts
 ![{74DCF022-A292-4B60-866A-BDF406F89CF1}](https://github.com/user-attachments/assets/59bfd262-0155-447c-9f04-2f3b3a3af4d6)
